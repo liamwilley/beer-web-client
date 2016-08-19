@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Alcohol Percentage</th>
+    <th>Beer Type</th>
+  <% @beers.each do |beer| %>
+  </tr>
+    <td><%= beer["name"]%></td>
+    <td><%= beer["price"]%></td>
+    <td><%= beer["alcohol_percentage"]%></td>
+    <td><%= beer["beer_type"]%></td>
+
+  <% end %>
+</table>

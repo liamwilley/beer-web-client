@@ -1,0 +1,9 @@
+<ul>
+  <li>Name: <%= @beer["name"] %></li>
+  <li>Price: <%= @beer["price"] %></li>
+  <li>Alcohol Percentage: <%= @beer["alcohol percentage"] %></li>
+  <li>Beer Type: <%= @beer["beer type"] %></li>
+</ul>
+
+<%= link_to "Edit", "/beers/#{@beer['id']}/edit" %>
+<%= link_to "Delete", "/beers/#{@beer['id']}" method: :delete %>
